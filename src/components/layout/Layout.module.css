@@ -1,0 +1,45 @@
+.layout__container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 100vh;
+    width: 100%;
+    grid-gap: 10px;
+    grid-template-areas: "dates"
+                        "buttons"
+                         "information";
+
+}
+
+.dates__container {
+    margin-top: 20px;
+    grid-area: "dates";
+    width: 100%;
+   
+}
+
+.buttons__container {
+    margin-top: 20px;
+    min-height: 300px;
+}
+
+.dates__img {
+    text-align: center;
+    border: solid 5px;
+    border-radius: 150px;
+    font-size: 30px;
+    background-image: url('../../../public/foto.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;  
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (min-width: 500px) {
+    .layout__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
