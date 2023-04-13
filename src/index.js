@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.scss';
-
+import './index.css'
 // import Popper from "popper.js";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 

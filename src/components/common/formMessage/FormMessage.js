@@ -38,30 +38,29 @@ const FormMessage = () => {
   return (
     <form
       onSubmit={handelSubmit}
-      className='col-sm-12 col-lg-12 p-2 p-md-4 p-lg-5 m-3 d-flex flex-column align-items-center text-light bg-success bg-gradient text-center'
-      style={{ maxWidth: '300px' }}
+      className='col-sm-12 col-lg-12 p-2 p-md-4 p-lg-5  d-flex flex-column align-items-center text-primary bg-black text-center'
+    
     >
-      <h2>Contactanos</h2>
+      <h2>Contact with me</h2>
 
       <p>
-        Dejanos tu nombre y tu mail, cuentanos que solucion necesitas y nos
-        pondremos en contacto contigo
+      Send me a message telling me what you need and I will contact you by mail... Or if you prefer, fill in the telephone field and I will contact you by WhatsApp
       </p>
       <Input
-        className='col-md-12 col-lg-12 mb-5'
+        className='col-md-12 col-lg-12 mb-2'
         type='text'
         name='name'
-        label={'Nombre'}
+        label={'Name'}
         required
         onChange={handleFormData}
         value={formData.name}
         placeholder='REQUIRED'
       />
       <Input
-        className='col-md-12 col-lg-12 mb-5'
-        type='mail'
+        className='col-md-12 col-lg-12 mb-2'
+        type='email'
         name='mail'
-        label={'Mail'}
+        label={'EMail'}
         required
         onChange={handleFormData}
         value={formData.mail}
@@ -71,25 +70,25 @@ const FormMessage = () => {
         className='col-md-12 col-lg-12 mb-5'
         type='phone'
         name='phone'
-        label={'Telefono'}
+        label={'Phone'}
         onChange={handleFormData}
         value={formData.phone}
       />
       <TextArea
         className='col-md-12 col-lg-12 mb-5'
-        label={'Comentarios'}
+        label={'Message'}
         value={formData.comments}
         onChange={handleFormData}
         name='comments'
         placeholder='REQUIRED'
+        required
       />
       <Button
         type='submit'
-        className='btn btn-secondary mx-3 my-3 bg-warning bg-gradient'
+        className='btn btn-secondary mx-3 my-3 text-primary'
         classNameContainer='col-md-12 align-right'
-        style={{ color: 'white' }}
       >
-        Enviar
+        Send message
       </Button>
       
       <Toaster position="top-center" richColors />
